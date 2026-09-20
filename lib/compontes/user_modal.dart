@@ -1,0 +1,24 @@
+class User {
+  final String fullName;
+  final String email;
+  final String password;
+  final String phoneNumber;
+  User({
+    required this.fullName,
+    required this.email,
+    required this.password,
+    required this.phoneNumber,
+  });
+  Map<String, dynamic> toMap() {
+    return {
+      'fullName': fullName,
+      'email': email,
+      'password': password,
+      'phoneNumber': phoneNumber,
+    };
+  }
+}
+
+class UserData {
+ static List<User> userList = [];
+}
