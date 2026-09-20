@@ -168,6 +168,15 @@ class _LogginState extends State<Loggin> {
                             ),
                           );
                         }
+                      } else {
+                        showModalBottomSheet(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                              title: Text('بريد المتروني غير صحيح'),
+                            );
+                          },
+                        );
                       }
                     }
                   },
