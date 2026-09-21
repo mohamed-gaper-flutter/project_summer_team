@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_summer_team/screens/ok_padge.dart';
 
 class OffersPage extends StatefulWidget {
   const OffersPage({super.key});
@@ -218,7 +219,18 @@ class _OffersPageState extends State<OffersPage> {
                           width: double.infinity,
 
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return OkPage(
+                                      checkoutItems: [laptop],
+                                    );
+                                  },
+                                ),
+                              );
+                            },
 
                             style: ElevatedButton.styleFrom(
                               backgroundColor: const Color(0xff172B4D),

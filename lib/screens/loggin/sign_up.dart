@@ -3,7 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:project_summer_team/compontes/item_filed.dart';
 import 'package:project_summer_team/compontes/user_modal.dart';
-import 'package:project_summer_team/screens/view_padge.dart';
+import 'package:project_summer_team/screens/home_padge.dart';
+
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -90,7 +91,7 @@ class _SignUpState extends State<SignUp> {
                         context,
                         MaterialPageRoute(
                           builder: (context) {
-                            return OffersPage();
+                            return HomePage();
                           },
                         ),
                       );

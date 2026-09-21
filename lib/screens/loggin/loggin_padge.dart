@@ -1,9 +1,9 @@
 // ignore_for_file: sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
+import 'package:project_summer_team/screens/home_padge.dart';
 import 'package:project_summer_team/screens/loggin/forgat_password.dart';
 import 'package:project_summer_team/screens/loggin/sign_up.dart';
-import 'package:project_summer_team/screens/view_padge.dart';
 import 'package:project_summer_team/compontes/user_modal.dart';
 
 class Loggin extends StatefulWidget {
@@ -140,7 +140,7 @@ class _LogginState extends State<Loggin> {
                             context,
                             MaterialPageRoute(
                               builder: (context) {
-                                return OffersPage();
+                                return HomePage();
                               },
                             ),
                           );
@@ -173,7 +173,7 @@ class _LogginState extends State<Loggin> {
                           context: context,
                           builder: (context) {
                             return AlertDialog(
-                              title: Text('بريد المتروني غير صحيح'),
+                              title: Text('بريد الكتروني غير صحيح'),
                             );
                           },
                         );
